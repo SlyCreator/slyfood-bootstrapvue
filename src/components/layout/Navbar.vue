@@ -2,9 +2,14 @@
   <div>
     <b-navbar toggleable="lg" type="dark" variant="success">
       <b-container>
-        <b-navbar-brand href="#">SlyCreator_Food</b-navbar-brand>
+        <b-navbar-brand href="http://localhost:8080/#/">Slycreator's Grocery</b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
+          <b-navbar-nav>
+             <router-link to="/blog"><b-nav-item href="http://localhost:8080/#/blog">Blog</b-nav-item></router-link>           
+            <router-link to="/about" ><b-nav-item href="http://localhost:8080/#/about">About</b-nav-item></router-link>
+            <router-link to="/contactus"><b-nav-item href="http://localhost:8080/#/contactus">Contact Us</b-nav-item></router-link>
+          </b-navbar-nav>
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
             <b-nav-form>
@@ -38,7 +43,8 @@ export default {
     };
   },
   methods: {
-    getMeal() {}
+    getMeal() {},
+    goTodetail() {}
   }
 };
 </script>
